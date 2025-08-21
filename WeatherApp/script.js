@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const Humidity = document.getElementById("humidity");
     const errorMessage = document.getElementById("error-message");
 
-    const API_KEY = "34043149a8751f1bae090421fb2ddffd";
+    const API_KEY = "YOUR_API-KEY";
 
 getWeather.addEventListener("click", async ()=>{
     const city = cityInput.value.trim();
