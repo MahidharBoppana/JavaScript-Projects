@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(46, 44, 44);
+}
+
+.counterContainer{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.counterContainer label{
+    margin-bottom: 10px;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: Helvetica;
+    color: white;
+}
+
+#btnContainer button{
+    background-color: rgb(77, 77, 244);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
+    transition: background-color 0.5s;
+}
+
+#btnContainer button:hover{
+    background-color: blue;
+}

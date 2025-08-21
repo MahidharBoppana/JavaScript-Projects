@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nav-container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#cart-icon button {
+  border: none;
+  background: transparent;
+  font-size: 2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+#cart-icon span {
+  position: absolute;
+  top: 45px;
+  right: 230px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  padding: 3px;
+}
+
+#shopping-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.card-container {
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px black;
+  padding-bottom: 20px;
+}
+
+.product-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 15px 15px 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  text-align: center;
+}
+
+.product-content button {
+  width: 80%;
+  border: none;
+  border-radius: 30px;
+  background-color: orangered;
+  color: white;
+  font-weight: bold;
+  padding: 15px 20px;
+  transition: background-color 0.5s ease;
+}
+
+.product-price{
+  font-weight: bold;
+}
+
+.product-content button:hover {
+  background-color: hsl(16, 100%, 40%);
+}
+
+#total{
+  margin-bottom: 50px;
+}
+
+.card{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  border: 1px solid rgb(172, 171, 171);
+  padding: 0 15px 0 0;
+  margin-bottom: 10px;
+}
+
+.card .price{
+  font-weight: bold;
+}
+
+.card .productdesc{
+  font-style: italic;
+}
+
+.card button{
+  border: none;
+  border-radius: 30px;
+  padding: 10px 15px;
+  background-color: orangered;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+.card button:hover{
+  background-color: hsl(16, 100%, 40%);
+}
+
+.card img{
+  width: 200px;
+  height: 200px;
+}
+
+a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  border-radius: 30px;
+  background-color: black;
+  padding: 10px 15px;
+  margin-bottom: 50px;
+}
