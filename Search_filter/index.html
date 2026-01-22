@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search + filter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Search & Filter products</h1>
+      <div class="search-input">
+        <input
+          type="text"
+          placeholder="Search product..."
+          id="searchInput"
+          required
+        />
+      </div>
+      <div class="main-section">
+        <div class="filters-container">
+          <div class="category-filter">
+            <select id="categoryFilter">
+              <option value="all">All</option>
+            </select>
+          </div>
+          <div class="price-filter">
+            <select id="priceFilter">
+              <option value="all">All Prices</option>
+              <option value="low">Below ₹500</option>
+              <option value="high">Above ₹500</option>
+            </select>
+          </div>
+        </div>
+        <div class="products" id="productList"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
