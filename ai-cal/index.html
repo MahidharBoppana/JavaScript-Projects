@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Voice Calculator</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="chat-container">
+      <div class="header">🎤 AI Voice Calculator</div>
+
+      <div class="chat-box" id="chatBox">
+        <div class="message bot">
+          Hello 👋 <br /><br />
+
+          Type or speak calculations:
+          <br /><br />
+
+          5 + 9 <br />
+          10 * 5 <br />
+          sqrt(64)
+        </div>
+      </div>
+
+      <div class="input-area">
+        <input type="text" id="userInput" placeholder="Type calculation..." />
+
+        <button onclick="sendMessage()">Send</button>
+
+        <button class="mic" id="micBtn" onclick="startVoice()">🎤</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
